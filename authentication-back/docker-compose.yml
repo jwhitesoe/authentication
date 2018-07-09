@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  authentication-back:
+    image: ${DOCKER_REGISTRY}authenticationback
+    build:
+      context: .
+      dockerfile: authentication-back/Dockerfile
